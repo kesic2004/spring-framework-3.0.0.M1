@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="dump" name="dump_classpath_and_project">
+    <target name="dump">
+        <tar destfile="F:/dump20210921.tar">
+            <fileset dir="F:/spring-framework-3.0.x" id="3.0">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-3.1.x" id="3.1">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-3.2.x" id="3.2.x">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-3.2.a" id="3.2.a">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-4.0.x" id="4.0">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-4.1.x" id="4.1">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-4.2.x" id="4.2">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-4.3.x" id="4.3">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-5.0.x" id="5.0">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-5.1.x" id="5.1">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+            <fileset dir="F:/spring-framework-5.2.x" id="5.2">
+                <include name="**/*.classpath"/>
+                <include name="**/*.project"/>
+            </fileset>
+        </tar>
+    </target>
+</project>

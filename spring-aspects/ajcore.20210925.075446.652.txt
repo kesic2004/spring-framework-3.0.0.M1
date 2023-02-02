@@ -1,0 +1,282 @@
+---- AspectJ Properties ---
+AspectJ Compiler 1.6.2 built on Saturday Oct 4, 2008 at 05:47:07 GMT
+---- Dump Properties ---
+Dump file: ajcore.20210925.075446.652.txt
+Dump reason: java.lang.NullPointerException
+Dump on exception: true
+Dump at exit condition: abort
+---- Exception Information ---
+java.lang.NullPointerException
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.makeResolvedPointcutDefinition(PointcutDeclaration.java:218)
+	at org.aspectj.ajdt.internal.compiler.lookup.EclipseSourceType.fillDeclaredMembers(EclipseSourceType.java:244)
+	at org.aspectj.ajdt.internal.compiler.lookup.EclipseSourceType.getDeclaredPointcuts(EclipseSourceType.java:382)
+	at org.aspectj.weaver.ReferenceType.getDeclaredPointcuts(ReferenceType.java:587)
+	at org.aspectj.weaver.ResolvedType$7.get(ResolvedType.java:524)
+	at org.aspectj.weaver.Iterators$3$1.hasNext(Iterators.java:125)
+	at org.aspectj.weaver.Iterators$3.hasNext(Iterators.java:141)
+	at org.aspectj.weaver.ResolvedType.findPointcut(ResolvedType.java:534)
+	at org.aspectj.weaver.patterns.ReferencePointcut.resolveBindings(ReferencePointcut.java:152)
+	at org.aspectj.weaver.patterns.Pointcut.resolve(Pointcut.java:196)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDesignator.finishResolveTypes(PointcutDesignator.java:83)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.resolveStatements(PointcutDeclaration.java:205)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:404)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.resolvePointcut(PointcutDeclaration.java:187)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.resolvePointcutDeclarations(AjLookupEnvironment.java:496)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:278)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:966)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:264)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:179)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:352)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:233)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.executeInSameVM(AjcTask.java:1307)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.execute(AjcTask.java:1105)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:390)
+	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
+---- System Properties ---
+java.runtime.name=Java(TM) SE Runtime Environment
+sun.boot.library.path=D:\java\jdk1_6_0_45\jre\bin
+java.vm.version=20.45-b01
+ant.library.dir=D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib
+java.vm.vendor=Sun Microsystems Inc.
+java.vendor.url=http://java.sun.com/
+path.separator=;
+java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+file.encoding.pkg=sun.io
+sun.java.launcher=SUN_STANDARD
+user.country=CN
+sun.os.patch.level=
+java.vm.specification.name=Java Virtual Machine Specification
+user.dir=F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects
+java.runtime.version=1.6.0_45-b06
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.endorsed.dirs=D:\java\jdk1_6_0_45\jre\lib\endorsed
+os.arch=amd64
+java.io.tmpdir=C:\Users\radl\AppData\Local\Temp\
+line.separator=
+
+java.vm.specification.vendor=Sun Microsystems Inc.
+user.variant=
+os.name=Windows 8
+ant.home=D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300
+sun.jnu.encoding=GBK
+java.library.path=D:\eclipse370;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\SysWOW64;C:\Windows;C:\Windows\SysWOW64\Wbem;D:\java\jdk1_6_0_45\bin;D:\eclipse370;.;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\589\1\.cp
+java.specification.name=Java Platform API Specification
+java.class.version=50.0
+sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+os.version=6.2
+user.home=E:
+user.timezone=GMT-05:00
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+file.encoding=UTF-8
+java.specification.version=1.6
+java.class.path=D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-antlr.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-bcel.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-bsf.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-log4j.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-oro.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-regexp.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-resolver.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-xalan2.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-commons-logging.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-commons-net.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jai.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-javamail.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jdepend.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jmf.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jsch.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit4.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-launcher.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-netrexx.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-swing.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-testutil.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\50\1\.cp\lib\antdebug.jar;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\50\1\.cp\lib\remote.jar;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\51\1\.cp\lib\remoteAnt.jar;D:\Java\jdk1_6_0_45\lib\tools.jar;D:\eclipse370\plugins\org.eclipse.swt.win32.win32.x86_64_3.7.0.v3735b.jar
+user.name=radl
+java.vm.specification.version=1.0
+sun.java.command=org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1632574484643 -Declipse.connect.port=53446 -Declipse.pdebuild.home=/D:/eclipse370/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/./ -Declipse.pdebuild.scripts=/D:/eclipse370/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/scripts/ -Declipse.pdebuild.templates=/D:/eclipse370/plugins/org.eclipse.pde.build_3.7.0.v20110512-1320/templates/ -Dant.home=D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\MyBuild.xml
+java.home=D:\java\jdk1_6_0_45\jre
+sun.arch.data.model=64
+user.language=zh
+java.specification.vendor=Sun Microsystems Inc.
+awt.toolkit=sun.awt.windows.WToolkit
+java.vm.info=mixed mode
+java.version=1.6.0_45
+java.ext.dirs=D:\java\jdk1_6_0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext
+sun.boot.class.path=D:\java\jdk1_6_0_45\jre\lib\resources.jar;D:\java\jdk1_6_0_45\jre\lib\rt.jar;D:\java\jdk1_6_0_45\jre\lib\sunrsasign.jar;D:\java\jdk1_6_0_45\jre\lib\jsse.jar;D:\java\jdk1_6_0_45\jre\lib\jce.jar;D:\java\jdk1_6_0_45\jre\lib\charsets.jar;D:\java\jdk1_6_0_45\jre\lib\modules\jdk.boot.jar;D:\java\jdk1_6_0_45\jre\classes
+java.vendor=Sun Microsystems Inc.
+file.separator=\
+java.vendor.url.bug=http://java.sun.com/cgi-bin/bugreport.cgi
+sun.io.unicode.encoding=UnicodeLittle
+sun.cpu.endian=little
+sun.desktop=windows
+sun.cpu.isalist=amd64
+---- Command Line ---
+-source
+1.5
+-target
+1.5
+-g
+-d
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\MyBuild\bin
+-encoding
+UTF-8
+-aspectpath
+F:\repo1\org\aspectj\com.springsource.org.aspectj.weaver\1.6.2.RELEASE\com.springsource.org.aspectj.weaver-1.6.2.RELEASE.jar;F:\repo1\org\aspectj\com.springsource.org.aspectj.runtime\1.6.2.RELEASE\com.springsource.org.aspectj.runtime-1.6.2.RELEASE.jar
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\beans\factory\aspectj\AbstractBeanConfigurerAspect.aj
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\beans\factory\aspectj\AbstractDependencyInjectionAspect.aj
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\beans\factory\aspectj\AbstractInterfaceDrivenDependencyInjectionAspect.aj
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\beans\factory\aspectj\AnnotationBeanConfigurerAspect.aj
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\beans\factory\aspectj\ConfigurableObject.java
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\transaction\aspectj\AbstractTransactionAspect.aj
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\transaction\aspectj\AnnotationTransactionAspect.aj
+---- Full Classpath ---
+D:\java\jdk1_6_0_45\jre\lib\resources.jar(1133757 bytes)
+D:\java\jdk1_6_0_45\jre\lib\rt.jar(50274075 bytes)
+D:\java\jdk1_6_0_45\jre\lib\sunrsasign.jar(missing)
+D:\java\jdk1_6_0_45\jre\lib\jsse.jar(640447 bytes)
+D:\java\jdk1_6_0_45\jre\lib\jce.jar(88238 bytes)
+D:\java\jdk1_6_0_45\jre\lib\charsets.jar(6745251 bytes)
+D:\java\jdk1_6_0_45\jre\lib\modules\jdk.boot.jar(missing)
+D:\java\jdk1_6_0_45\jre\classes(missing)
+F:\repo1\org\aspectj\com.springsource.org.aspectj.weaver\1.6.2.RELEASE\com.springsource.org.aspectj.weaver-1.6.2.RELEASE.jar(1558759 bytes)
+F:\repo1\org\aspectj\com.springsource.org.aspectj.runtime\1.6.2.RELEASE\com.springsource.org.aspectj.runtime-1.6.2.RELEASE.jar(117006 bytes)
+D:\java\jdk1_6_0_45\jre\lib\ext\dnsns.jar(8238 bytes)
+D:\java\jdk1_6_0_45\jre\lib\ext\localedata.jar(845352 bytes)
+D:\java\jdk1_6_0_45\jre\lib\ext\sunjce_provider.jar(170315 bytes)
+D:\java\jdk1_6_0_45\jre\lib\ext\sunmscapi.jar(35547 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-antlr.jar(5989 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-bcel.jar(9097 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-bsf.jar(4249 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-log4j.jar(3361 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-oro.jar(40276 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-regexp.jar(4106 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-resolver.jar(4418 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-xalan2.jar(2633 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-commons-logging.jar(4207 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-commons-net.jar(85302 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jai.jar(22684 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-javamail.jar(8167 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jdepend.jar(8477 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jmf.jar(7093 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jsch.jar(40320 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit.jar(101811 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit4.jar(7517 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-launcher.jar(12567 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-netrexx.jar(10656 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-swing.jar(7847 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-testutil.jar(15576 bytes)
+D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar(1927228 bytes)
+F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\50\1\.cp\lib\antdebug.jar(7907 bytes)
+F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\50\1\.cp\lib\remote.jar(38892 bytes)
+F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\51\1\.cp\lib\remoteAnt.jar(11046 bytes)
+D:\Java\jdk1_6_0_45\lib\tools.jar(12642456 bytes)
+D:\eclipse370\plugins\org.eclipse.swt.win32.win32.x86_64_3.7.0.v3735b.jar(2606364 bytes)
+---- Compiler Messages ---
+warning couldn't find aspectjrt.jar on classpath, checked: D:\java\jdk1_6_0_45\jre\lib\resources.jar;D:\java\jdk1_6_0_45\jre\lib\rt.jar;D:\java\jdk1_6_0_45\jre\lib\sunrsasign.jar;D:\java\jdk1_6_0_45\jre\lib\jsse.jar;D:\java\jdk1_6_0_45\jre\lib\jce.jar;D:\java\jdk1_6_0_45\jre\lib\charsets.jar;D:\java\jdk1_6_0_45\jre\lib\modules\jdk.boot.jar;D:\java\jdk1_6_0_45\jre\classes;F:\repo1\org\aspectj\com.springsource.org.aspectj.weaver\1.6.2.RELEASE\com.springsource.org.aspectj.weaver-1.6.2.RELEASE.jar;F:\repo1\org\aspectj\com.springsource.org.aspectj.runtime\1.6.2.RELEASE\com.springsource.org.aspectj.runtime-1.6.2.RELEASE.jar;D:\java\jdk1_6_0_45\jre\lib\ext\dnsns.jar;D:\java\jdk1_6_0_45\jre\lib\ext\localedata.jar;D:\java\jdk1_6_0_45\jre\lib\ext\sunjce_provider.jar;D:\java\jdk1_6_0_45\jre\lib\ext\sunmscapi.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-antlr.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-bcel.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-bsf.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-log4j.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-oro.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-regexp.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-resolver.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-apache-xalan2.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-commons-logging.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-commons-net.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jai.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-javamail.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jdepend.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jmf.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-jsch.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-junit4.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-launcher.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-netrexx.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-swing.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant-testutil.jar;D:\eclipse370\plugins\org.apache.ant_1.8.2.v20110505-1300\lib\ant.jar;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\50\1\.cp\lib\antdebug.jar;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\50\1\.cp\lib\remote.jar;F:\config\spring-framework-3_0_0\configuration\org.eclipse.osgi\bundles\51\1\.cp\lib\remoteAnt.jar;D:\Java\jdk1_6_0_45\lib\tools.jar;D:\eclipse370\plugins\org.eclipse.swt.win32.win32.x86_64_3.7.0.v3735b.jar
+info directory classpath entry does not exist: D:\java\jdk1_6_0_45\jre\lib\sunrsasign.jar
+info directory classpath entry does not exist: D:\java\jdk1_6_0_45\jre\lib\modules\jdk.boot.jar
+info zipfile classpath entry does not exist: D:\java\jdk1_6_0_45\jre\classes
+warning at <Unknown>::0 Found @DeclareAnnotation while current release does not support it (see 'org.aspectj.weaver.bcel.AtAjAttributes')
+info Pipelining compilation
+error at (no source information available)
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\transaction\aspectj\AnnotationTransactionAspect.aj:0::0 Internal compiler error
+java.lang.NullPointerException
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.makeResolvedPointcutDefinition(PointcutDeclaration.java:218)
+	at org.aspectj.ajdt.internal.compiler.lookup.EclipseSourceType.fillDeclaredMembers(EclipseSourceType.java:244)
+	at org.aspectj.ajdt.internal.compiler.lookup.EclipseSourceType.getDeclaredPointcuts(EclipseSourceType.java:382)
+	at org.aspectj.weaver.ReferenceType.getDeclaredPointcuts(ReferenceType.java:587)
+	at org.aspectj.weaver.ResolvedType$7.get(ResolvedType.java:524)
+	at org.aspectj.weaver.Iterators$3$1.hasNext(Iterators.java:125)
+	at org.aspectj.weaver.Iterators$3.hasNext(Iterators.java:141)
+	at org.aspectj.weaver.ResolvedType.findPointcut(ResolvedType.java:534)
+	at org.aspectj.weaver.patterns.ReferencePointcut.resolveBindings(ReferencePointcut.java:152)
+	at org.aspectj.weaver.patterns.Pointcut.resolve(Pointcut.java:196)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDesignator.finishResolveTypes(PointcutDesignator.java:83)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.resolveStatements(PointcutDeclaration.java:205)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:404)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.resolvePointcut(PointcutDeclaration.java:187)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.resolvePointcutDeclarations(AjLookupEnvironment.java:496)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:278)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:966)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:264)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:179)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:352)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:233)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.executeInSameVM(AjcTask.java:1307)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.execute(AjcTask.java:1105)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:390)
+	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
+
+error at public aspect AnnotationTransactionAspect extends AbstractTransactionAspect {
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+F:\spring-framework-3.0.x\spring-framework-3.0.0.M1\spring-aspects\src\main\java\org\springframework\transaction\aspectj\AnnotationTransactionAspect.aj:46:0::0 The hierarchy of the type AnnotationTransactionAspect is inconsistent
+abort ABORT -- (NullPointerException) null
+null
+java.lang.NullPointerException
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.makeResolvedPointcutDefinition(PointcutDeclaration.java:218)
+	at org.aspectj.ajdt.internal.compiler.lookup.EclipseSourceType.fillDeclaredMembers(EclipseSourceType.java:244)
+	at org.aspectj.ajdt.internal.compiler.lookup.EclipseSourceType.getDeclaredPointcuts(EclipseSourceType.java:382)
+	at org.aspectj.weaver.ReferenceType.getDeclaredPointcuts(ReferenceType.java:587)
+	at org.aspectj.weaver.ResolvedType$7.get(ResolvedType.java:524)
+	at org.aspectj.weaver.Iterators$3$1.hasNext(Iterators.java:125)
+	at org.aspectj.weaver.Iterators$3.hasNext(Iterators.java:141)
+	at org.aspectj.weaver.ResolvedType.findPointcut(ResolvedType.java:534)
+	at org.aspectj.weaver.patterns.ReferencePointcut.resolveBindings(ReferencePointcut.java:152)
+	at org.aspectj.weaver.patterns.Pointcut.resolve(Pointcut.java:196)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDesignator.finishResolveTypes(PointcutDesignator.java:83)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.resolveStatements(PointcutDeclaration.java:205)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:404)
+	at org.aspectj.ajdt.internal.compiler.ast.PointcutDeclaration.resolvePointcut(PointcutDeclaration.java:187)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.resolvePointcutDeclarations(AjLookupEnvironment.java:496)
+	at org.aspectj.ajdt.internal.compiler.lookup.AjLookupEnvironment.completeTypeBindings(AjLookupEnvironment.java:278)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.internalBeginToCompile(Compiler.java:616)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.beginToCompile(Compiler.java:357)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:371)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:966)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:264)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.batchBuild(AjBuildManager.java:179)
+	at org.aspectj.ajdt.ajc.AjdtCommand.doCommand(AjdtCommand.java:112)
+	at org.aspectj.ajdt.ajc.AjdtCommand.runCommand(AjdtCommand.java:60)
+	at org.aspectj.tools.ajc.Main.run(Main.java:352)
+	at org.aspectj.tools.ajc.Main.runMain(Main.java:233)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.executeInSameVM(AjcTask.java:1307)
+	at org.aspectj.tools.ant.taskdefs.AjcTask.execute(AjcTask.java:1105)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:390)
+	at org.apache.tools.ant.Target.performTasks(Target.java:411)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.eclipse.ant.internal.launching.remote.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.run(InternalAntRunner.java:424)
+	at org.eclipse.ant.internal.launching.remote.InternalAntRunner.main(InternalAntRunner.java:138)
+
+---- org.aspectj.weaver.bcel.BcelWorld@17094d48 ----
+Shadow mungers:
+Empty
+Type mungers:
+(EclipseTypeMunger ResolvedTypeMunger(Method, java.lang.Object org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport.readResolve()))
+(BcelTypeMunger ExposeTypeMunger(org.springframework.beans.factory.aspectj.AbstractInterfaceDrivenDependencyInjectionAspect$ConfigurableDeserializationSupport))
+Late Type mungers:
+Empty
